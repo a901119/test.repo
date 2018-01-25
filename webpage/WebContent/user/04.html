@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>UMS</title>
+<style>
+/* section{ */
+/* 	background-color:black; */
+/* } */
+
+.logo {
+  background-color:#424242;
+  height:110px;
+  text-align:center;
+  font-size:40px;
+  font-family:Sans-Serif;
+  padding-top:25px;
+}
+
+#logo-text {
+	color:white;
+}
+
+#topMenu {
+	background-color:white; 
+	width:850px;
+	height:30px;
+}
+
+#topMenu ul {
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+#topMenu ul li {
+	list-style:none;
+	color:white;
+	background-color:#2d2d2d;
+	float:left;
+	line-height:30px;
+	vertical-align:middle;
+	text-align:center;
+    position: relative;
+    left: 60%;
+    border:solid 0.5px white;
+	
+}
+
+#topMenu .menuLink {
+	text-decoration:none;
+	color: white;
+	display: block;
+	width: 150px;
+	font-size: 12px;
+	font-weight:bold;
+	font-family: "Trebuchet MS", Dotum, Arial;
+}
+
+#topMenu .menuLink:hover {
+	background-color: #4d4d4d;
+}
+
+#topMenu .menuLink:active {
+	background-color: gray;
+}
+
+#userList {
+	width: 60%;
+	margin:auto;
+	margin-top:5%;
+	text-align: center;
+	border:solid 1px gray;
+}
+
+#userList thead tr th {
+	text-align: center;
+}
+	 
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="./01.html" id="logo-text" style=text-decoration:none>
+				<strong>회원관리 시스템</strong>
+			</a>
+		</div>
+	</header>
+		<nav id="topMenu">
+			<ul>
+				<li><a class="menuLink" href="./01.html">목록</a></li>
+				<li><a class="menuLink" href="./02.html">등록</a></li>
+				<li><a class="menuLink" href="./03.html">수정</a></li>
+				<li><a class="menuLink" href="./04.html">삭제</a></li>
+			</ul>
+		</nav>
+	<table class="table table-hover" id="userList">
+		<caption>
+			사용자 리스트
+		</caption>
+		<thead>
+			<tr>
+				<th>사용자 번호</th>
+				<th>사용자 이름</th>
+				<th>등록일</th>
+				<th>탈퇴</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>김김김</td>
+				<td>2017-00-00</td>
+				<td><button type="submit" class="btn btn-default btn-xs">탈퇴</button></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>박박박</td>
+				<td>2017-00-00</td>
+				<td><button type="submit" class="btn btn-default btn-xs">탈퇴</button></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>최최최</td>
+				<td>2017-00-00</td>
+				<td><button type="submit" class="btn btn-default btn-xs">탈퇴</button></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
